@@ -171,6 +171,22 @@ int main(int argc, char** argv)
 				cout<<"Wrong choice choose again"<<endl;
 				break;
 		}
+		
+				// Paritosh's comments for implementing race condition
+		// pid=fork();
+		// if(pid==0)//it means child process
+		// {
+		// 	try to access the same file multiple times in a loop
+		// 	if you cant access the file than print that its the race condition, print time as well 
+		// }else//parent process
+		// {
+		// 		try to access the same file multiple times in a loop
+		// 		if you cant access the file than print that its the race condition, print time as well 
+	
+		// }
+		// create two threads which do same thing as the aprent and child processes do in the above forking scenario
+		// try writing or reading from two threads simultaneously
+
 	}
 
 	return 0;
